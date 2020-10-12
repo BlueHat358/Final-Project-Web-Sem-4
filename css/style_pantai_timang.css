@@ -1,0 +1,70 @@
+.jumbotron {
+	background-position: 0 -20px;
+	background-size: cover;
+	width: 100%
+    height: 100%;
+	background-attachment: fixed;
+	overflow: hidden;
+	z-index:1;
+}
+.body {
+	font-family: system-ui;
+}
+.jumbotron h1 {
+	margin-top: 230px;
+	color: White;
+	font-size: 80px;
+}
+.jumbotron p {
+	font-size: 30px;
+	color: White;
+	margin-top: 20px;
+}
+.jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px;
+}
+
+.jumbotron hr {
+	margin-top: 100px;
+	width: 140px;
+	border-top: 4px solid white;
+}
+
+section	{
+	min-height: 420px;
+}
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-30px, 0);
+	transition: 3s;
+}
+.pKanan {
+	transform: translate(30px, 0) ;
+}
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.about .peta {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.about p { 
+	text-align: justify;
+}
+.pict hr {
+	width: 250px;
+	border-top: 3px solid #666;
+}
+.pict .gambar {
+	opacity: 0;
+	transform: translate(0, 40px);
+	transition: .3s;
+}
+.pict .gambar.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.pict .source {
+	font-size: 8px;
+}

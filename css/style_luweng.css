@@ -1,0 +1,158 @@
+.jumbotron {
+/* https://www.google.com/url?sa=i&url=https%3A%2
+F%2Fraskita.com%2Fair-terjun-luweng-sampang%2F&ps
+ig=AOvVaw3qcxeoYhMu5mnTR4MT1XmB&ust=159255513051
+7000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDj76X4iuoCFQAAAAAdAAAAABAb */
+	background-size: cover;
+	height: 600px;
+	background-attachment: fixed;
+}
+.body {
+	font-family: system-ui;
+}
+.jumbotron h1 {
+	margin-top: 100px;
+	color: white;
+	font-size: 80px;
+}
+.jumbotron p {
+	font-size: 10px;
+	color: white;
+	margin-top: 60px;
+
+}
+.jumbotron hr {
+	margin-top: 100px;
+	width: 140px;
+	border-top: 4px solid white;
+
+
+}
+section	{
+	min-height: 600px;
+}
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 3s;
+}
+.pKanan {
+	transform: translate(50px, 0) ;
+}
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.about .peta {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.about p { 
+	text-align: justify;
+}
+.pict hr {
+	width: 250px;
+	border-top: 3px solid #666;
+}
+.pict .gambar {
+	opacity: 0;
+	transform: translate(0, 40px);
+	transition: .3s;
+}
+.pict .gambar.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.pict .source {
+	font-size: 8px;
+}
+
+    .header-area{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    .header-logo{
+		margin-left: 2vw;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #d1abca;
+	}
+    
+    #header-menu{
+        float: right;
+        margin-right: 3rem;
+        text-align: center;
+    }
+    
+    #header-menu a:hover{
+		color: #e1dded;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	.header-bottom{
+        background-image: url(../image/waduk-sermo3.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+        background-repeat: no-repeat;
+    }
+    
+    .content-header{
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.8)70%, rgba(0, 0, 0, 1) 100%);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fasilitas-title hr{
+        border: 1.8px solid #dce6f1;
+        border-radius: 3px;
+        margin-bottom: 3rem;
+    }
+    
+    .fasilitas-title h3{
+        color: #4576aa;
+    }
+	
+@media(max-device-width: 767px){
+    .header-area{
+		position: fixed;
+		width: 100%;
+        z-index: 2;
+	}
+
+	.header-menu-area{
+		position: sticky;
+	}
+
+	.header-logo{
+		padding-left: 2vw;
+	}
+
+	#header-menu a{
+		color: #d1abca;
+		text-decoration: none;
+	}
+
+	#header-menu a:hover{
+		color: #e1dded;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	.header-bottom{
+	    background-image: url(../image/waduk-sermo3.jpeg);
+		height: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        background-position: center;
+	}
+
+	.content-header{
+		background: radial-gradient(circle, rgba(0, 0, 0, 0.8)70%, rgba(0, 0, 0, 1) 100%);
+		width: 100%;
+		height: 100%;
+	}
+}
